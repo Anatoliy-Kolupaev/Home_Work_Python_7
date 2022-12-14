@@ -1,5 +1,3 @@
-import logger
-
 
 def check_name(base, name):
     """Ищет имя и тел в справочнике"""
