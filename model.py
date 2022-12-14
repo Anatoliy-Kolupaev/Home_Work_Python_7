@@ -15,6 +15,4 @@ def check_name_for_del(str1, name):
     else:
         print()
         print('Такого контакта нет')
-    str1 = list(str1.items())
-    for i in str1:
-        logger.create_book(i[0], i[1])
+    return list(str1.items())
