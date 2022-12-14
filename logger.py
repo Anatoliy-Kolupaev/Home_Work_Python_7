@@ -29,3 +29,8 @@ def create_book(n1, n2):
     """Перезаписывает справочник"""
     with open('phone_book.txt', 'a', encoding='utf-8') as data:
         data.write(f'{str(n1.capitalize())}//{str(n2)}\n')
+
+
+def record(str1):
+    for i in str1:
+        create_book(i[0], i[1])
