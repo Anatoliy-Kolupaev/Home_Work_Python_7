@@ -24,5 +24,6 @@ def run():
             name = view.delit_contact()
             base = logger.read_mode_phone_book()
             logger.clear_book()
-            model.check_name_for_del(base, name)
+            result = model.check_name_for_del(base, name)
+            logger.record(result)
             cont = view.continue_work_book()
